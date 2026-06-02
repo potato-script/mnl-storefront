@@ -27,10 +27,6 @@ export default function Footer({ onNavigate }: FooterProps) {
     }
   };
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <footer className="bg-[#0D0D0D] text-white border-t border-white/5 font-sans antialiased pt-16 pb-12">
       <div className="max-w-6xl mx-auto px-6 md:px-12">
