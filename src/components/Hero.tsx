@@ -40,7 +40,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative h-screen w-full bg-[#0D0D0D] overflow-hidden flex flex-col justify-between pt-24">
+    <section id="hero" className="relative h-screen w-full bg-[#0D0D0D] overflow-hidden flex flex-col justify-between pt-24">
       <div className="absolute inset-0 z-0 opacity-40 mix-blend-luminosity">
         <AnimatePresence mode="wait">
           <motion.img
