@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowUp, ShoppingBag, User } from "lucide-react";
 
@@ -14,10 +14,12 @@ export default function Navbar({
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
-
   const [activeLink, setActiveLink] = useState<string | null>(null);
 
+  const isProgrammaticScrollRef = useRef(false);
+
   const navLinks = [
+    { label: "Home", href: "#hero", view: "home" as const },
     { label: "Featured", href: "#shop", view: "home" as const },
     { label: "Lookbook", href: "#lookbook", view: "home" as const },
     { label: "About", href: "#about", view: "home" as const },
@@ -28,7 +30,7 @@ export default function Navbar({
     if (currentView === "collections") {
       setActiveLink("Collections");
     } else {
-      setActiveLink(null);
+      if (activeLink === "Collections") setActiveLink(null);
     }
   }, [currentView]);
 
@@ -50,6 +52,8 @@ export default function Navbar({
       };
 
       observer = new IntersectionObserver((entries) => {
+        if (isProgrammaticScrollRef.current) return;
+
         entries.forEach((entry) => {
           if (entry.isIntersecting && currentView === "home") {
             const id = entry.target.getAttribute("id");
@@ -86,13 +90,29 @@ export default function Navbar({
     }
 
     if (link.view === "home") {
+      isProgrammaticScrollRef.current = true;
+
       setTimeout(() => {
         const id = link.href.replace("#", "");
         const element = document.getElementById(id);
         if (element) {
           element.scrollIntoView({ behavior: "smooth", block: "start" });
+
+          let scrollTimeout: number;
+          const checkScrollEnd = () => {
+            clearTimeout(scrollTimeout);
+            scrollTimeout = window.setTimeout(() => {
+              window.removeEventListener("scroll", checkScrollEnd);
+              isProgrammaticScrollRef.current = false;
+            }, 100);
+          };
+
+          window.addEventListener("scroll", checkScrollEnd);
+          checkScrollEnd();
+        } else {
+          isProgrammaticScrollRef.current = false;
         }
-      }, 50);
+      }, 100);
     }
   };
 
@@ -243,7 +263,6 @@ export default function Navbar({
                 </div>
 
                 <div className="mt-auto pt-4 border-t border-white/5 space-y-4">
-
                   <div className="flex items-center justify-between gap-4">
                     <button className="flex items-center gap-3 text-white hover:text-[#D4AF37] text-sm font-sans tracking-wide transition-colors">
                       <User
