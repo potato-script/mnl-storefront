@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ArrowUp } from "lucide-react";
+import { Menu, X, ArrowUp, ShoppingBag, User } from "lucide-react";
 
 interface NavbarProps {
   currentView?: "home" | "collections";
@@ -19,11 +19,6 @@ export default function Navbar({
 
   const navLinks = [
     { label: "Featured", href: "#shop", view: "home" as const },
-    {
-      label: "Collections",
-      href: "#collections-section",
-      view: "collections" as const,
-    },
     { label: "Lookbook", href: "#lookbook", view: "home" as const },
     { label: "About", href: "#about", view: "home" as const },
     { label: "Contact", href: "#contact", view: "home" as const },
@@ -113,8 +108,8 @@ export default function Navbar({
       <nav
         className={`fixed top-0 left-0 w-full z-50 transition-[background-color,padding,backdrop-filter] duration-300 ${
           isScrolled
-            ? "bg-[#0D0D0D]/80 backdrop-blur-md border-b border-white/5 py-4 transition-[border-color] duration-300"
-            : "bg-transparent py-6 border-b border-transparent transition-[border-color] duration-75"
+            ? "bg-[#0D0D0D]/80 backdrop-blur-md border-b border-white/5 py-4"
+            : "bg-transparent py-6 border-b border-transparent"
         }`}>
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center relative">
           <a
@@ -124,8 +119,11 @@ export default function Navbar({
               scrollToTop();
               if (onNavigate) onNavigate("home");
             }}
-            className="font-display font-extrabold text-xl tracking-tighter text-white">
+            className="font-display font-extrabold text-xl tracking-tighter text-white z-50">
             MNL
+            <span className="font-display font-extrabold text-xl tracking-tighter text-[#D4AF37]">
+              Clothing
+            </span>
           </a>
 
           <div className="hidden md:flex items-center gap-10 font-sans text-xs uppercase tracking-[0.2em]">
@@ -154,9 +152,24 @@ export default function Navbar({
             ))}
           </div>
 
+          <div className="hidden md:flex items-center gap-6 text-white border-l border-white/10 pl-6">
+            <button className="flex items-center gap-2 hover:text-[#D4AF37] transition-colors duration-300 cursor-pointer group">
+              <ShoppingBag
+                className="w-4 h-4 group-hover:scale-105 transition-transform"
+                strokeWidth={2}
+              />
+              <span className="font-mono text-xs tracking-wider">(0)</span>
+            </button>
+            <button
+              className="hover:text-[#D4AF37] transition-colors duration-300 cursor-pointer"
+              aria-label="Account">
+              <User className="w-4 h-4" strokeWidth={2} />
+            </button>
+          </div>
+
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="text-white hover:text-[#D4AF37] transition-colors duration-300 md:hidden p-1 focus:outline-none"
+            className="text-white hover:text-[#D4AF37] transition-colors duration-300 md:hidden p-1 focus:outline-none z-50"
             aria-label={isMobileMenuOpen ? "Close Menu" : "Open Menu"}>
             <AnimatePresence mode="wait">
               {!isMobileMenuOpen ? (
@@ -189,7 +202,7 @@ export default function Navbar({
                 exit={{ opacity: 0, y: -10, scaleY: 0.95 }}
                 transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
                 style={{ originY: 0 }}
-                className="absolute top-full left-0 right-0 mt-4 mx-6 p-6 bg-[#0D0D0D]/95 backdrop-blur-lg border border-white/5 rounded-2xl flex flex-col gap-4 md:hidden z-40 shadow-2xl shadow-black/50">
+                className="absolute top-full left-0 right-0 mt-4 mx-6 p-6 bg-[#0D0D0D]/95 backdrop-blur-lg border border-white/5 rounded-b-2xl rounded-t-none flex flex-col justify-between min-h-95 md:hidden z-40 shadow-2xl shadow-black/50">
                 <div>
                   <span className="font-mono text-[9px] tracking-[0.25em] text-[#8A8A8A] uppercase block mb-4">
                     Navigate
@@ -213,6 +226,24 @@ export default function Navbar({
                         {link.label}
                       </a>
                     ))}
+                  </div>
+                </div>
+
+                <div className="mt-auto pt-4 border-t border-white/5 space-y-4">
+
+                  <div className="flex items-center justify-between gap-4">
+                    <button className="flex items-center gap-3 text-white hover:text-[#D4AF37] text-sm font-sans tracking-wide transition-colors">
+                      <User
+                        className="w-4 h-4 text-[#8A8A8A]"
+                        strokeWidth={2}
+                      />
+                      <span>Account Profile</span>
+                    </button>
+
+                    <button className="flex items-center gap-2 bg-white/5 hover:bg-white/10 text-white border border-white/10 px-3.5 py-2 rounded-xl transition-all text-xs font-mono">
+                      <ShoppingBag className="w-3.5 h-3.5" strokeWidth={2} />
+                      <span>Cart: 0</span>
+                    </button>
                   </div>
                 </div>
               </motion.div>
