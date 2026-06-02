@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { ArrowRight } from "lucide-react"; 
 
 const BACKGROUND_IMAGES = [
   "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1600&q=80",
@@ -30,7 +31,9 @@ export default function Hero() {
   }, []);
 
   const scrollToFeaturedCollection = () => {
-    const targetSection = document.getElementById("shop") || document.getElementById("collections-section");
+    const targetSection =
+      document.getElementById("shop") ||
+      document.getElementById("collections-section");
     if (targetSection) {
       targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
     }
@@ -69,25 +72,29 @@ export default function Hero() {
           </h1>
 
           <div className="flex flex-wrap gap-4">
-            <button 
+            <button
               onClick={(e) => {
                 e.preventDefault();
                 scrollToFeaturedCollection();
               }}
-              className="px-8 py-4 bg-white text-[#0D0D0D] font-sans font-bold text-xs tracking-[0.2em] uppercase transition-colors duration-300 hover:bg-[#D4AF37] hover:text-[#0D0D0D] cursor-pointer z-10"
-            >
+              className="px-8 py-4 bg-white text-[#0D0D0D] font-sans font-bold text-xs tracking-[0.2em] uppercase transition-colors duration-300 hover:bg-[#D4AF37] hover:text-[#0D0D0D] cursor-pointer z-10">
               VIEW FEATURED ITEMS
             </button>
-            
+
             <button
               onClick={(e) => {
                 e.preventDefault();
                 const lookbookSec = document.getElementById("lookbook");
-                if (lookbookSec) lookbookSec.scrollIntoView({ behavior: "smooth" });
+                if (lookbookSec)
+                  lookbookSec.scrollIntoView({ behavior: "smooth" });
               }}
-              className="px-8 py-4 bg-transparent text-white border border-white/20 font-sans font-medium text-xs tracking-[0.2em] uppercase transition-colors duration-300 hover:border-white hover:bg-white/5 cursor-pointer z-10"
-            >
-              VIEW LOOKBOOK
+              className="group px-8 py-4 bg-transparent text-white border border-white/20 font-sans font-medium text-xs tracking-[0.2em] uppercase transition-colors duration-300 hover:border-white hover:bg-white/5 cursor-pointer z-10 flex items-center gap-2">
+              <span>View Lookbook</span>
+
+              <ArrowRight
+                className="w-3.5 h-3.5 transition-transform duration-300 ease-out group-hover:translate-x-0.5"
+                strokeWidth={2}
+              />
             </button>
           </div>
         </div>
