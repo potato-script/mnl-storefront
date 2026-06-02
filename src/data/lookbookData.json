@@ -1,0 +1,74 @@
+[
+  {
+    "id": "c1",
+    "title": "METRO PHANTOM",
+    "subtitle": "STREET EDITORIAL // 01",
+    "image": "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=80",
+    "size": "large",
+    "location": "Intramuros, Manila",
+    "season": "SS26"
+  },
+  {
+    "id": "c2",
+    "title": "RAW ARCHITECTURE",
+    "subtitle": "TECHNICAL APPAREL // 02",
+    "image": "https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=800&q=80",
+    "size": "small-tall",
+    "location": "Makati Underpass",
+    "season": "SS26"
+  },
+  {
+    "id": "c3",
+    "title": "CONCRETE VOID",
+    "subtitle": "MINIMALIST HOODS // 03",
+    "image": "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=800&q=80",
+    "size": "small-wide",
+    "location": "BGC Corporate Hub",
+    "season": "SS26"
+  },
+  {
+    "id": "c4",
+    "title": "ASPHALT CORE",
+    "subtitle": "HEAVY UTILITY // 04",
+    "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=1000&q=80",
+    "size": "medium",
+    "location": "Quezon City Overpass",
+    "season": "SS26"
+  },
+  {
+    "id": "c5",
+    "title": "OBSIDIAN NIGHTS",
+    "subtitle": "THERMAL BLOCK // 01",
+    "image": "https://images.unsplash.com/photo-1611312449412-6cefac5dc3e4?auto=format&fit=crop&w=1000&q=80",
+    "size": "medium",
+    "location": "Binondo, Manila",
+    "season": "AW25"
+  },
+  {
+    "id": "c6",
+    "title": "INDUSTRIAL SHELL",
+    "subtitle": "WEATHER PROOF // 02",
+    "image": "https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=1000&q=80",
+    "size": "small-wide",
+    "location": "Port Area, Manila",
+    "season": "AW25"
+  },
+  {
+    "id": "c7",
+    "title": "GRAPHITE MONOLITH",
+    "subtitle": "TRANSITIONAL APPAREL // 01",
+    "image": "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?auto=format&fit=crop&w=1000&q=80",
+    "size": "small-tall",
+    "location": "Ortigas Center",
+    "season": "PRE-FALL"
+  },
+  {
+    "id": "c8",
+    "title": "DESTRUCTED LAYER",
+    "subtitle": "RAW DENIM EDIT // 02",
+    "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=1000&q=80",
+    "size": "medium",
+    "location": "Ermita, Manila",
+    "season": "PRE-FALL"
+  }
+]

@@ -4,139 +4,199 @@
     "title": "Phantom Oversized Tee",
     "price": 950,
     "tag": "NEW DROP",
-    "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=1000&q=80"
+    "style": "Streetwear",
+    "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=1000&q=80",
+    "description": "Crafted from 260GSM ultra-heavyweight combed cotton. Features a relaxed drop-shoulder silhouette, custom high-rib collar framing, and raw minimal finish lines optimized for daily comfort.",
+    "sizes": ["S", "M", "L", "XL"]
   },
   {
     "id": "p2",
     "title": "Void Pullover Hoodie",
     "price": 2100,
     "tag": null,
-    "image": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=1000&q=80"
+    "style": "Streetwear",
+    "image": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=1000&q=80",
+    "description": "Double-lined architectural hood without drawstrings for a clean profile. Engineered with 400GSM cotton-poly fleece, kangaroo pockets with hidden bartack reinforcements, and cropped waist tailoring.",
+    "sizes": ["M", "L", "XL", "XXL"]
   },
   {
     "id": "p3",
     "title": "Ink Cargo Shorts",
     "price": 1400,
     "tag": "LIMITED",
-    "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=1000&q=80"
+    "style": "Streetwear",
+    "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=1000&q=80",
+    "description": "Heavy utility nylon construction with an adjustable tactical integrated webbing belt. Multi-pocket matrix featuring dual pleated side 3D cargo compartments and weather-resistant matte zippers.",
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": "p4",
     "title": "Obsidian Worker Jacket",
     "price": 3200,
     "tag": "NEW DROP",
-    "image": "https://images.unsplash.com/photo-1611312449412-6cefac5dc3e4?auto=format&fit=crop&w=1000&q=80"
+    "style": "Streetwear",
+    "image": "https://images.unsplash.com/photo-1611312449412-6cefac5dc3e4?auto=format&fit=crop&w=1000&q=80",
+    "description": "Heavyweight washed canvas exterior shell complete with a luxury quilted insulated lining. Features custom engraved steel hardware button closures, a sharp corduroy collar accent, and internal chest utility pouches.",
+    "sizes": ["M", "L", "XL"]
   },
   {
     "id": "p5",
     "title": "Graphite Heavyweight Beanie",
     "price": 650,
     "tag": null,
-    "image": "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?auto=format&fit=crop&w=1000&q=80"
+    "style": "Streetwear",
+    "image": "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?auto=format&fit=crop&w=1000&q=80",
+    "description": "Double-layer four-guard knit composition engineered for structure and temperature preservation. High-density stretch memory retention yarn ensures it keeps its pristine shape over extended wear.",
+    "sizes": ["OS"]
   },
   {
     "id": "p6",
     "title": "Aero Technical Pants",
     "price": 2450,
     "tag": "RESTOCK",
-    "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=1000&q=80"
+    "style": "Streetwear",
+    "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=1000&q=80",
+    "description": "Water-repellent stretch nylon paneled structure. Ergonomic knee articulation cuts for fluid motion, adjustable bungee drawcords at the ankles, and integrated magnetic buckle fasteners.",
+    "sizes": ["S", "M", "L", "XL"]
   },
   {
     "id": "p7",
     "title": "Raw Ash Distressed Denim",
     "price": 2800,
     "tag": "LIMITED",
-    "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=1000&q=80"
+    "style": "Streetwear",
+    "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=1000&q=80",
+    "description": "14oz raw selvedge denim cut in a modern relaxed straight taper. Features custom hand-repaired knee fray detailing, classic 5-pocket architecture, and premium branded steel rivets.",
+    "sizes": ["30", "32", "34", "36"]
   },
   {
     "id": "p8",
     "title": "Cyber Core Chest Rig",
     "price": 1850,
     "tag": "NEW DROP",
-    "image": "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=1000&q=80"
+    "style": "Streetwear",
+    "image": "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=1000&q=80",
+    "description": "High-tensile industrial Cordura platform with a custom mesh ventilated back support panel. Quick-release magnetic front chest clips paired with adjustable modular nylon gear strapping.",
+    "sizes": ["OS"]
   },
   {
     "id": "p9",
     "title": "Asphalt Mockneck Sweatshirt",
     "price": 1950,
     "tag": null,
-    "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=1000&q=80"
+    "style": "Streetwear",
+    "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=1000&q=80",
+    "description": "Elegant 380GSM organic terry cotton construction featuring a reinforced mockneck collar design. Oversized sleeves offset by a clean, close-knit elastic hem accent line.",
+    "sizes": ["S", "M", "L", "XL"]
   },
   {
     "id": "p10",
     "title": "Graphene Windbreaker Box",
     "price": 3400,
     "tag": "PRE-ORDER",
-    "image": "https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=1000&q=80"
+    "style": "Streetwear",
+    "image": "https://images.unsplash.com/photo-1548883354-7622d03aca27?auto=format&fit=crop&w=1000&q=80",
+    "description": "Ultralight ripstop shell infused with weather-proof wind blocking membrane panels. Features packable construction transitions, a waterproof front storm zipper zipper, and reflective design prints.",
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": "p11",
     "title": "Onyx Tactical Belt Bag",
     "price": 1100,
     "tag": "RESTOCK",
-    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1000&q=80"
+    "style": "Streetwear",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=1000&q=80",
+    "description": "Ballistic matte nylon composite cross-body containment system. Dual main organization bays with water-resistant seam tape seals and a reinforced adjustable quick-snap clip loop strap.",
+    "sizes": ["OS"]
   },
   {
     "id": "p12",
     "title": "Static Heavyweight Socks",
     "price": 350,
     "tag": null,
-    "image": "https://images.unsplash.com/photo-1582966772680-860e372bb558?auto=format&fit=crop&w=1000&q=80"
+    "style": "Streetwear",
+    "image": "https://images.unsplash.com/photo-1582966772680-860e372bb558?auto=format&fit=crop&w=1000&q=80",
+    "description": "Premium combed cotton blend enhanced with a dynamic cushioned footbed arch grip structure. Breathable specialized upper mesh ventilation channels finished with high-contrast jacquard knit branding lines.",
+    "sizes": ["OS"]
   },
   {
     "id": "p13",
     "title": "Krypton Technical Overshirt",
     "price": 2650,
     "tag": "NEW DROP",
-    "image": "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=1000&q=80"
+    "style": "Streetwear",
+    "image": "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=1000&q=80",
+    "description": "Structured high-density technical twill shirt jacket. Dual flush-fit raw chest patch pockets, custom matte snap-fasteners, and a clean flat straight-cut hem layout.",
+    "sizes": ["S", "M", "L", "XL"]
   },
   {
     "id": "p14",
     "title": "Carbon Knit Balaclava",
     "price": 850,
     "tag": "LIMITED",
-    "image": "https://images.unsplash.com/photo-1574169208507-84376144848b?auto=format&fit=crop&w=1000&q=80"
+    "style": "Streetwear",
+    "image": "https://images.unsplash.com/photo-1574169208507-84376144848b?auto=format&fit=crop&w=1000&q=80",
+    "description": "Tactical thermal fine-gauge ribbed face containment gear. Anatomically contoured eye-opening framing borders with seamless micro-fleece lining to ensure ultimate skin comfort profiles.",
+    "sizes": ["OS"]
   },
   {
     "id": "p15",
     "title": "Soot Tailored Track Pants",
     "price": 2200,
     "tag": "RESTOCK",
-    "image": "https://images.unsplash.com/photo-1551854838-212c50b4c184?auto=format&fit=crop&w=1000&q=80"
+    "style": "Streetwear",
+    "image": "https://images.unsplash.com/photo-1551854838-212c50b4c184?auto=format&fit=crop&w=1000&q=80",
+    "description": "Heavy interlock double-knit luxury track pants. Refined pinch-stitch front pleats, clean hidden zipper welt pockets, and custom-milled side stripe strip canvas panels.",
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": "p16",
     "title": "Rust Acid-Wash Box Tee",
     "price": 1050,
     "tag": null,
-    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1000&q=80"
+    "style": "Streetwear",
+    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1000&q=80",
+    "description": "Custom vintage mineral wash pattern treated 240GSM heavyweight box fit tee. Split side hem vents, extended drop shoulders, and unique individual distressing traits per garment.",
+    "sizes": ["S", "M", "L", "XL", "XXL"]
   },
   {
     "id": "p17",
     "title": "Spectre Waterproof Shell",
     "price": 4100,
     "tag": "PRE-ORDER",
-    "image": "https://images.unsplash.com/photo-1548883354-94bcfe321cbb?auto=format&fit=crop&w=1000&q=80"
+    "style": "Streetwear",
+    "image": "https://images.unsplash.com/photo-1548883354-94bcfe321cbb?auto=format&fit=crop&w=1000&q=80",
+    "description": "3-layer seam-sealed laminated waterproof shell block defense. 20,000mm hydrostatic head rating, custom YKK AquaGuard fully watertight zippers, and dynamic adjustable hood visor profiles.",
+    "sizes": ["M", "L", "XL"]
   },
   {
     "id": "p18",
     "title": "Vandal Ribbed Cardigan",
     "price": 2750,
     "tag": "NEW DROP",
-    "image": "https://images.unsplash.com/photo-1614975058789-41316d0e2e9c?auto=format&fit=crop&w=1000&q=80"
+    "style": "Streetwear",
+    "image": "https://images.unsplash.com/photo-1614975058789-41316d0e2e9c?auto=format&fit=crop&w=1000&q=80",
+    "description": "Heavy-gauge mohair wool blend knit layout detailed with custom rough edge distressed lines. Features deep marbled resin button closure front rows and cozy dropped-slouch sleeve patterns.",
+    "sizes": ["S", "M", "L"]
   },
   {
     "id": "p19",
     "title": "Basalt Canvas Tote",
     "price": 1250,
     "tag": null,
-    "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1000&q=80"
+    "style": "Streetwear",
+    "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1000&q=80",
+    "description": "24oz ultra-rugged cotton duck canvas utility carrier. Dual heavy-webbing shoulder carry straps paired with interior computer protective sleeve pockets and steel key clip fasteners.",
+    "sizes": ["OS"]
   },
   {
     "id": "p20",
     "title": "Helix Distressed Knit Crew",
     "price": 2400,
     "tag": "LIMITED",
-    "image": "https://images.unsplash.com/photo-1620799139507-2a76f79a2f4d?auto=format&fit=crop&w=1000&q=80"
+    "style": "Streetwear",
+    "image": "https://images.unsplash.com/photo-1620799139507-2a76f79a2f4d?auto=format&fit=crop&w=1000&q=80",
+    "description": "Open-knit textured panel mesh sweater detailed with custom ladders and localized fringe distressing. Built with fine organic cotton threads for comfortable warm seasonal layering layout paths.",
+    "sizes": ["M", "L", "XL"]
   }
 ]
