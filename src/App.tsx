@@ -5,12 +5,17 @@ import FeaturedCollection from "./components/FeaturedCollection";
 import AllCollections from "./pages/AllCollections";
 import Lookbook from "./components/Lookbook";
 import LookbookDetail from "./pages/LookbookDetail";
+import About from "./components/About";
+import BlogStory from "./components/BlogStory";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default function App() {
   const [currentPath] = useState(window.location.pathname);
-  const [currentView, setCurrentView] = useState<"home" | "collections">(
-    "home",
-  );
+
+  const [currentView, setCurrentView] = useState<
+    "home" | "collections" | "story"
+  >("home");
 
   useEffect(() => {
     if (window.location.hash === "#lookbook") {
@@ -23,6 +28,12 @@ export default function App() {
     }
   }, []);
 
+  const handleNavigate = (view: "home" | "collections" | "story") => {
+    if (currentView !== view) {
+      setCurrentView(view);
+      window.scrollTo({ top: 0, behavior: "instant" });
+    }
+  };
   if (currentPath.startsWith("/lookbook/")) {
     return <LookbookDetail />;
   }
@@ -30,26 +41,38 @@ export default function App() {
   return (
     <div className="bg-[#0D0D0D] min-h-screen text-white antialiased">
       <Navbar
-        currentView={currentView}
-        onNavigate={(view) => setCurrentView(view)}
+        currentView={currentView === "story" ? "collections" : currentView}
+        onNavigate={(view) => handleNavigate(view)}
       />
 
-      {currentView === "home" ? (
+      {currentView === "home" && (
         <main>
           <Hero />
 
           <div id="shop">
             <FeaturedCollection
-              onNavigateToAll={() => setCurrentView("collections")}
+              onNavigateToAll={() => handleNavigate("collections")}
             />
           </div>
+
           <div id="lookbook">
             <Lookbook />
           </div>
+
+          <About onReadStory={() => handleNavigate("story")} />
+          <Contact />
         </main>
-      ) : (
-        <AllCollections onBackToHome={() => setCurrentView("home")} />
       )}
+
+      {currentView === "collections" && (
+        <AllCollections onBackToHome={() => handleNavigate("home")} />
+      )}
+
+      {currentView === "story" && (
+        <BlogStory onBackToHome={() => handleNavigate("home")} />
+      )}
+
+      <Footer onNavigate={handleNavigate} />
     </div>
   );
 }
