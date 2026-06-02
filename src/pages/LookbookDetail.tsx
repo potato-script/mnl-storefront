@@ -1,5 +1,6 @@
 import { ArrowLeft } from "lucide-react";
 import LOOKBOOK_CAMPAIGNS from "../data/lookbookData.json";
+import Footer from "../components/Footer";
 
 export default function LookbookDetail() {
   const pathParts = window.location.pathname.split("/");
@@ -61,6 +62,7 @@ export default function LookbookDetail() {
           </p>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
